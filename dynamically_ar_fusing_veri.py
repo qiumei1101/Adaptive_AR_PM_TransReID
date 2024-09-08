@@ -100,9 +100,9 @@ def main(args):
             model_2_ar = args.model_2_ar
             model_3_ar = args.model_3_ar
 
-            weight1 = 1.2 if abs(model_1_ar - ar) <= 0.6 else 1.0 if abs(model_1_ar - ar) <= 1.25 else 0.9
-            weight2 = 1.5 if abs(model_2_ar - ar) <= 0.6 else 1.0 if abs(model_2_ar - ar) <= 1.25 else 0.9
-            weight3 = 1.8 if abs(model_3_ar - ar) <= 0.6 else 1.0 if abs(model_3_ar - ar) <= 1.25 else 0.9
+            weight1 = 1.3 if abs(model_1_ar - ar) <= 0.3 else 1.0 if abs(model_1_ar - ar) <= 0.6 else 0.9
+            weight2 = 1.0 if abs(model_2_ar - ar) <= 0.3 else 1.0 if abs(model_2_ar - ar) <= 0.6 else 0.9
+            weight3 = 0.9 if abs(model_3_ar - ar) <= 0.3 else 1.0 if abs(model_3_ar - ar) <= 0.6 else 0.9
 
             weights.append(weight1)
             weights.append(weight2)

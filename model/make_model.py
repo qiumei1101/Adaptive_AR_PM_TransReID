@@ -3,6 +3,7 @@ import torch.nn as nn
 from .backbones.resnet import ResNet, Bottleneck
 import copy
 from .backbones.adptive_ar_PM_TransReID import vit_base_patch16_224_PM_TransReID, vit_small_patch16_224_PM_TransReID, deit_small_patch16_224_PM_TransReID
+from .backbones.adptive_ar_PM_TransReID import vit_base_patch16_224_TransReID, vit_small_patch16_224_TransReID, deit_small_patch16_224_TransReID
 from loss.metric_learning import Arcface, Cosface, AMSoftmax, CircleLoss
 from skimage.feature import hog
 def shuffle_unit(features, shift, group, begin=1):

@@ -756,3 +756,8 @@ def trunc_normal_(tensor, mean=0., std=1., a=-2., b=2.):
         >>> nn.init.trunc_normal_(w)
     """
     return _no_grad_trunc_normal_(tensor, mean, std, a, b)
+
+
+vit_base_patch16_224_TransReID = vit_base_patch16_224_PM_TransReID
+vit_small_patch16_224_TransReID = vit_small_patch16_224_PM_TransReID
+deit_small_patch16_224_TransReID = deit_small_patch16_224_PM_TransReID

@@ -1,0 +1,12 @@
+torch
+torchvision
+yacs
+Pillow
+opencv-python-headless
+numpy
+scipy
+scikit-learn
+scikit-image
+matplotlib
+timm
+flake8
